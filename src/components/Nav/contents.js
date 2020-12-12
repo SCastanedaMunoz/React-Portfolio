@@ -1,5 +1,11 @@
 import {NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_DROPDOWN } from "../../utils/constants";
 
+import path from "path";
+
+function getPublicPath(filePath) {
+    return path.join(process.env.PUBLIC_URL, filePath);
+}
+
 const Contents = [
     {
         type: NAV_TYPE_PAGE,
@@ -70,17 +76,17 @@ const Contents = [
     },
     {
         type: NAV_TYPE_ICON,
-        icon: "React-Portfolio/assets/images/icons/GitHub-Light.png",
-        icon_light: "React-Portfolio/assets/images/icons/GitHub-Light.png",
-        icon_dark: "React-Portfolio/assets/images/icons/GitHub-Dark.png",
+        icon: getPublicPath("assets/images/icons/GitHub-Light.png"),
+        icon_light: getPublicPath("assets/images/icons/GitHub-Light.png"),
+        icon_dark: getPublicPath("assets/images/icons/GitHub-Dark.png"),
         link: "https://github.com/SCastanedaMunoz",
         text: "GitHub",
     },
     {
         type: NAV_TYPE_ICON,
-        icon: "React-Portfolio/assets/images/icons/LinkedIn.png",
-        icon_light: "React-Portfolio/assets/images/icons/LinkedIn.png",
-        icon_dark: "React-Portfolio/assets/images/icons/LinkedIn.png",
+        icon: getPublicPath("assets/images/icons/LinkedIn.png"),
+        icon_light: getPublicPath("assets/images/icons/LinkedIn.png"),
+        icon_dark: getPublicPath("assets/images/icons/LinkedIn.png"),
         link: "https://www.linkedin.com/in/santiagocastanedamunoz",
         text: "LinkedIn",
     },

@@ -1,0 +1,43 @@
+nav {
+    background-color: #263238;
+}
+
+nav .brand-logo {
+    font-weight: bolder;
+    padding: 0px 15px;
+    text-shadow: 1px 1px #90a4ae;
+}
+
+nav ul a , .sidenav li > a {
+    font-weight: bold;
+    text-shadow: .75px .75px #607d8b;
+}
+
+
+.social-icon-nav {
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
+
+.social-icon-side {
+    width: 35px;
+    position: relative;
+    top: 5.5px;
+}
+
+.dropdown-content li>a {
+    font-weight: bold;
+    color: rgba(0,0,0,0.87);
+    text-shadow: .75px .75px #607d8b;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+}

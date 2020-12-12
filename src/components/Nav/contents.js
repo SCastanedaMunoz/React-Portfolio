@@ -3,7 +3,11 @@ import {NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_DROPDOWN } from "../../utils/cons
 import path from "path";
 
 function getPublicPath(filePath) {
-    return path.join(process.env.PUBLIC_URL, filePath);
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+        return path.join(process.env.PUBLIC_URL, filePath);
+    } else {
+        return path.join(".");
+    }
 }
 
 const Contents = [

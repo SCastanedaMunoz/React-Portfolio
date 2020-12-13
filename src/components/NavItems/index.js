@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import WebProjectContext from "../../utils/WebProjectContext";
+
 export function NavPage({ currentPage, link, target, text }) {
     return <li>
         <a className={link === currentPage ? "active" : ""} href={link} target={target}>{text}</a>
@@ -18,7 +21,6 @@ export function NavIcon({ location, link, text, icon_dark, icon_light, icon}) {
 }
 
 export function NavDropdown({location, link, text, drop_content }) {
-
     let dropDownStruct = (<ul id={`${link}-${location}`} className="dropdown-content">
         {drop_content.map(dropItem => {
             return <DropDownItem 
@@ -37,6 +39,7 @@ export function NavDropdown({location, link, text, drop_content }) {
     </li>);
 }
 
-function DropDownItem({ title, summary, path_screenshot, link_deploy, link_github}){
-    return <li  key={link_deploy}><a href="#!" className="dropdown-link" data-summary={summary} data-ss={path_screenshot} data-deploy={link_deploy} data-github={link_github} data-title={title}>{title}</a></li>;
+function DropDownItem({ title, link_deploy, link_github, summary, path_screenshot}){
+    const webProject = useContext(WebProjectContext);
+    return <li><a href="#!" onClick={()=> webProject.onDropDownClick(title, link_deploy, link_github, path_screenshot, summary)} className="dropdown-link">{title}</a></li>;
 }

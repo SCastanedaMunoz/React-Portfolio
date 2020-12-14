@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.e65e4315.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.992b4a0e.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.992b4a0e.chunk.js.map",
+    "main.css": "/React-Portfolio/static/css/main.7c932d96.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.f8316c3f.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.f8316c3f.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.ba1c2482.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.ba1c2482.js.map",
     "static/css/2.f15e0525.chunk.css": "/React-Portfolio/static/css/2.f15e0525.chunk.css",
-    "static/js/2.31384079.chunk.js": "/React-Portfolio/static/js/2.31384079.chunk.js",
-    "static/js/2.31384079.chunk.js.map": "/React-Portfolio/static/js/2.31384079.chunk.js.map",
+    "static/js/2.759ef3d8.chunk.js": "/React-Portfolio/static/js/2.759ef3d8.chunk.js",
+    "static/js/2.759ef3d8.chunk.js.map": "/React-Portfolio/static/js/2.759ef3d8.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
     "static/css/2.f15e0525.chunk.css.map": "/React-Portfolio/static/css/2.f15e0525.chunk.css.map",
-    "static/css/main.e65e4315.chunk.css.map": "/React-Portfolio/static/css/main.e65e4315.chunk.css.map",
-    "static/js/2.31384079.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.31384079.chunk.js.LICENSE.txt",
+    "static/css/main.7c932d96.chunk.css.map": "/React-Portfolio/static/css/main.7c932d96.chunk.css.map",
+    "static/js/2.759ef3d8.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.759ef3d8.chunk.js.LICENSE.txt",
     "static/media/GitHub-Light.3ec61b93.png": "/React-Portfolio/static/media/GitHub-Light.3ec61b93.png",
     "static/media/Profile.a6cb23fc.png": "/React-Portfolio/static/media/Profile.a6cb23fc.png",
     "static/media/index.css": "/React-Portfolio/static/media/background.0694bcab.png",
-    "static/media/covid_reporter.4cd1bc61.png": "/React-Portfolio/static/media/covid_reporter.4cd1bc61.png"
+    "static/media/code_quiz.c30b4037.png": "/React-Portfolio/static/media/code_quiz.c30b4037.png",
+    "static/media/covid_reporter.4cd1bc61.png": "/React-Portfolio/static/media/covid_reporter.4cd1bc61.png",
+    "static/media/falcon_finder.80d6348a.png": "/React-Portfolio/static/media/falcon_finder.80d6348a.png",
+    "static/media/password_generator.7243f2d4.png": "/React-Portfolio/static/media/password_generator.7243f2d4.png",
+    "static/media/weather_dashboard.8883affc.png": "/React-Portfolio/static/media/weather_dashboard.8883affc.png",
+    "static/media/work_day_scheduler.b9120469.png": "/React-Portfolio/static/media/work_day_scheduler.b9120469.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ba1c2482.js",
     "static/css/2.f15e0525.chunk.css",
-    "static/js/2.31384079.chunk.js",
-    "static/css/main.e65e4315.chunk.css",
-    "static/js/main.992b4a0e.chunk.js"
+    "static/js/2.759ef3d8.chunk.js",
+    "static/css/main.7c932d96.chunk.css",
+    "static/js/main.f8316c3f.chunk.js"
   ]
 }

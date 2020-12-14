@@ -59,7 +59,7 @@ function Nav() {
     return (
         <nav>
             <div className="nav-wrapper">
-                <a href="/" className="brand-logo">SCastanedaMunoz</a>
+                <a href="/React-Portfolio" className="brand-logo">SCastanedaMunoz</a>
                 <a href="#!" data-target="mobile-sidenav" className="sidenav-trigger">
                     <i className="material-icons">menu</i>
                 </a>

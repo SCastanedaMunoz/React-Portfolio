@@ -12,14 +12,13 @@ import password_generator from "../../images/web_projects/password_generator.png
 const Contents = [
     {
         type: NAV_TYPE_PAGE,
-        link: "/",
+        link: "/React-Portfolio",
         text: "About",
         target: "",
     },
     {
         type: NAV_TYPE_PAGE,
-        link:
-            "https://drive.google.com/file/d/1-x6nO7vAsd0makzaCQCj2sXypM5dkCvs/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1-x6nO7vAsd0makzaCQCj2sXypM5dkCvs/view?usp=sharing",
         text: "Resume",
         target: "_blank",
     },

@@ -1,14 +1,8 @@
-import {NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_DROPDOWN } from "../../utils/constants";
-
-import path from "path";
-
-function getPublicPath(filePath) {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        return path.join(process.env.PUBLIC_URL, filePath);
-    } else {
-        return path.join(".");
-    }
-}
+import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_DROPDOWN } from "../../utils/constants";
+import covid_reporter from "../../images/web_projects/covid_reporter.png";
+import linkedInIcon from "../../images/icons/LinkedIn.png";
+import github_dark from "../../images/icons/GitHub-Dark.png";
+import github_light from "../../images/icons/GitHub-Light.png";
 
 const Contents = [
     {
@@ -33,7 +27,7 @@ const Contents = [
                 title: "COVID-19 Reporter",
                 link_deploy: "https://tuxedoed-turtles-project-2.herokuapp.com/",
                 link_github: "https://github.com/SCastanedaMunoz/Project-2",
-                path_screenshot: "assets/images/web_projects/covid_reporter.png",
+                path_screenshot: covid_reporter,
                 summary: "For this project, the initial idea was to make a self reporting COVID-19 app where users can go about reporting their COVID-19 status as well as visualizing people's statuses around specific areas on the map.",
             },
             {
@@ -80,17 +74,17 @@ const Contents = [
     },
     {
         type: NAV_TYPE_ICON,
-        icon: getPublicPath("assets/images/icons/GitHub-Light.png"),
-        icon_light: getPublicPath("assets/images/icons/GitHub-Light.png"),
-        icon_dark: getPublicPath("assets/images/icons/GitHub-Dark.png"),
+        icon: github_light,
+        icon_light: github_light,
+        icon_dark: github_dark,
         link: "https://github.com/SCastanedaMunoz",
         text: "GitHub",
     },
     {
         type: NAV_TYPE_ICON,
-        icon: getPublicPath("assets/images/icons/LinkedIn.png"),
-        icon_light: getPublicPath("assets/images/icons/LinkedIn.png"),
-        icon_dark: getPublicPath("assets/images/icons/LinkedIn.png"),
+        icon: linkedInIcon,
+        icon_light: linkedInIcon,
+        icon_dark: linkedInIcon,
         link: "https://www.linkedin.com/in/santiagocastanedamunoz",
         text: "LinkedIn",
     },

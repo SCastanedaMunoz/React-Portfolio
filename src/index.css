@@ -1,9 +1,19 @@
-html,
-body,
-#root,
-#root > div,
-div[data-reactroot] {
-  height: 100%;
-  padding: 0;
-  margin: 0;
+* {
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px #263238;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("./images/background.png");
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.image-container {
+  text-align: center;
 }

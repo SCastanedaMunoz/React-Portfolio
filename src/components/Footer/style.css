@@ -1,0 +1,26 @@
+.page-footer {
+    background-color: #263238;
+}
+
+.page-footer .footer-copyright {
+    background-color: #1f292e;
+}
+
+.footer-text {
+    color: white;
+    text-shadow: .75px .75px #607d8b;
+}
+
+p, .footer-text {
+    margin: 0;
+}
+
+h6.footer-margin {
+    margin-bottom: .8em;
+}
+
+.footer-name {
+    color: white;
+    text-shadow: .75px .75px #607d8b;
+    margin: 0;
+}

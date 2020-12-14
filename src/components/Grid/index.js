@@ -6,8 +6,9 @@ export function Container({ children }) {
 }
 
 // This Row component lets us use a bootstrap row without having to think about class names
-export function Row({ children, id }) {
-    return <div className="row"
+export function Row({ id, classes, children }) {
+    let custom = classes? classes : "";
+    return <div className={`row ${custom}`}
         id={id ? id : ""}>{children}</div>;
 }
 

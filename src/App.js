@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import WebProjectContext from "./utils/WebProjectContext";
-import { PAGE_ABOUT, PAGE_WEBPROJECT} from "./utils/constants";
 import About from "./pages/About";
+import WebProject from "./pages/WebProject";
+import { PAGE_ABOUT, PAGE_WEBPROJECT } from "./utils/constants";
+
 
 function App() {
 
@@ -26,21 +29,20 @@ function App() {
   })
 
   const getPage = () => {
-    switch(webState.current)
-    {
+    switch (webState.current) {
       case PAGE_WEBPROJECT:
-        return <></>;
-      
+        return <WebProject title={webState.title} link_deploy={webState.link_deploy} link_github={webState.link_github} screenshot={webState.screenshot} summary={webState.summary} />;
       default:
       case PAGE_ABOUT:
-        return <About/>
+        return <About />
     }
   }
 
   return (
     <WebProjectContext.Provider value={webState}>
-      <Nav/>
+      <Nav />
       {getPage()}
+      <Footer />
     </WebProjectContext.Provider>
   );
 }

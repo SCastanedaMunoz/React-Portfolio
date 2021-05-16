@@ -8,9 +8,11 @@ function WebProjectPage({ title, link_deploy, link_github, screenshot, summary }
             <Row>
                 <Col size="m6" classes="offset-m3" id="web-project">
                     <header><h2>{title}</h2></header>
+                    <hr/>
                     <div className="image-container">
                         <img src={screenshot} alt={title} className="responsive-img screenshot" />
                     </div>
+                    <hr/>
 
                     <p>{summary}</p>
 

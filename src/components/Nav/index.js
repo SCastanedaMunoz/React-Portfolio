@@ -1,9 +1,8 @@
-import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css";
 import "./style.css";
 import navContents from "./contents";
-import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_DROPDOWN } from "../../utils/constants";
-import { NavPage, NavIcon, NavDropdown } from "../NavItems";
+import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_BOOTCAMP_DROPDOWN, NAV_TYPE_PRO_EXPERIENCE } from "../../utils/constants";
+import { NavPage, NavIcon, BootcampNavDropdown, ProExpNavDropdown } from "../NavItems";
 
 function fillNavElement(location) {
     let path = window.location.pathname;
@@ -29,8 +28,16 @@ function fillNavElement(location) {
                     icon_light={item.icon_light}
                     icon={item.icon}
                 ></NavIcon>;
-            case NAV_TYPE_DROPDOWN:
-                return <NavDropdown
+            case NAV_TYPE_PRO_EXPERIENCE:
+                return <ProExpNavDropdown
+                    location={location}
+                    link={item.link}
+                    text={item.text}
+                    drop_content={item.drop_content}
+                    >
+                </ProExpNavDropdown>
+            case NAV_TYPE_BOOTCAMP_DROPDOWN:
+                return <BootcampNavDropdown
                     key={item.text}
                     text={item.text}
                     location={location}
@@ -38,7 +45,7 @@ function fillNavElement(location) {
                     title={item.title}
                     drop_content={item.drop_content}
                 >
-                </NavDropdown>
+                </BootcampNavDropdown>
             default:
                 return (<></>);
         }

@@ -10,10 +10,14 @@ body {
   background-image: url("./images/background.png");
 }
 
-main {
+#root {
   flex: 1 0 auto;
 }
 
 .image-container {
   text-align: center;
+}
+
+.row {
+  margin-bottom: 0;
 }

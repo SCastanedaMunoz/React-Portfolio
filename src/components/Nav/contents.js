@@ -1,4 +1,4 @@
-import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_DROPDOWN } from "../../utils/constants";
+import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_BOOTCAMP_DROPDOWN, NAV_TYPE_PRO_EXPERIENCE } from "../../utils/constants";
 import linkedInIcon from "../../images/icons/LinkedIn.png";
 import github_dark from "../../images/icons/GitHub-Dark.png";
 import github_light from "../../images/icons/GitHub-Light.png";
@@ -23,7 +23,18 @@ const Contents = [
         target: "_blank",
     },
     {
-        type: NAV_TYPE_DROPDOWN,
+        type: NAV_TYPE_PRO_EXPERIENCE,
+        link: "profExpDropdown",
+        text: "Prof Exp",
+        drop_content: [
+            {
+                title: "Tilting Point Media LLC",
+                page: <></>
+            }
+        ]
+    },
+    {
+        type: NAV_TYPE_BOOTCAMP_DROPDOWN,
         link: "webDevDropdown",
         text: "Web Dev",
         drop_content: [
@@ -48,7 +59,7 @@ const Contents = [
                 link_github: "https://github.com/SCastanedaMunoz/Weather-Dashboard",
                 path_screenshot: weather_dashboard,
                 summary:
-                    "For this project, I took the approach of building in HTML the minimally required elements neeeded to build the layout for the application. As such, I used Javascript and JQuery to dinamically fill up the layout with the corresponding content for each city and weather.",
+                    "For this project, I took the approach of building in HTML the minimally required elements neeeded to build the layout for the application. As such, I used Javascript and JQuery to dinamically fill up the layout with the corresponding content for each city and weather. In order to fetch weather values based off a city, I utilized the REST API available from https://openweathermap.org. Such API was very easy to use, and I could improve anything on the App would be to have a button to allow users to fetch weather based off their location. Another important aspect of this apps, was utilizing local storage and other utilities in order to keep the user preferences for future visits. In the future, I would like to have some sort of user authentication so each user can have their own customizable weather dashboard.",
             },
             {
                 title: "Work Day Scheduler",
@@ -72,7 +83,7 @@ const Contents = [
                 link_github: "https://github.com/SCastanedaMunoz/Password-Generator",
                 path_screenshot: password_generator,
                 summary:
-                    "Password Generator utilizing basic understanding of Javascript and how to manage arrays and other data types as well as communicating data from Javascript into the HTML pages.",
+                    "Password Generator utilizing basic understanding of Javascript and how to manage arrays and other data types as well as communicating data from Javascript into the HTML pages. Creating a password generator was a great way to learn on how passwords can be generated programatically. Additionally, it was pretty interesting to see all of the different options that can be added and provided to users when building a password. I believe as a starting webproject a Password Generator is a greatway in which new developers can understand how to properly code small applications and how to provide better utilities to their users. If I could change anything off the app, I would make it more mobile friendly as well as having all the possible options being part of the UI/UX instead of alerts.",
             },
         ],
     },

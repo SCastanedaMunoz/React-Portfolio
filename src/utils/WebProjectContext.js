@@ -7,7 +7,9 @@ const WebProjectContext = React.createContext({
     link_github: "",
     screenshot: "",
     summary: "",
-    onDropDownClick: () => undefined,
+    proExpPage: <></>,
+    onBootCampDropDownClick: () => undefined,
+    onProExpDropDownClick: () => undefined,
     onAboutClick: ()=> undefined
 });
 

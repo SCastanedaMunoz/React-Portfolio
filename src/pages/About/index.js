@@ -1,4 +1,3 @@
-import "materialize-css/dist/css/materialize.min.css";
 import "./style.css";
 import { Container, Row, Col } from "../../components/Grid";
 import profile from "../../images/Profile.png";
@@ -7,29 +6,12 @@ function AboutPage() {
     return (
         <Container>
             <Row>
-                <Col id="about" size="m5">
-                    <div className="image-container">
-                        <img src={profile} alt="Profile" className="responsive-img" />
-                    </div>
-                    <br/>
-                    <p>Welcome to my new Website! This time coded and arranged all by myself!</p>
-                    <br/>
-                    <p>Also, here is a video of my last published project, TapTapCars: Traffic Jam! it is available on Android and iOS platforms.</p>
-                    <br/>
-
-                    <div className="video-container">
-                        <iframe title="TapTapCars: Traffic Jam!" src="https://www.youtube.com/embed/dPyMorOLmF8" frameBorder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
-                    </div>
-                </Col>
-
-                <Col id="info" size="m5" classes="offset-m1">
-                    <header>
-                        <h1>About Me</h1>
+                <Col id="about" size="m8" classes="offset-m2">
+                <header>
+                    <h1>About Me</h1>
                     </header>
                     <hr/>
-                        <p>Hi there! Welcome to my Website, I am a Software Engineer working for Tilting Point Media LLC, based in
+                        <p>Hi there! Welcome to my Website, this time coded and arranged all by myself! I am a Software Engineer working for Tilting Point Media LLC, based in
                         Austin, Texas. I am familiar in many programming languages, such as Java, C#, Objective-C, C++, Python, JavaScript, HTML, CSS, and Unity Game Engine.</p>
                         <br/>
                         <p>I spend most of my time, 60 - 70 hours a week programming and learning new things. Most of the time I
@@ -43,6 +25,21 @@ function AboutPage() {
                         <br/>
                         <p>Although programming, Video Games and learning are a key aspects of my life, I believe everything in life
                         is influential. From an early age, I learned to play multiple musical instruments, like Piano and Guitar. Thus, music is very important in my life.</p>
+
+                    <hr/>
+                    <br/>
+                    <div className="image-container">
+                        <img src={profile} alt="Profile" className="responsive-img" />
+                    </div>
+                    <br/>
+                    <p>Also, here is a video of my last published project, TapTapCars: Traffic Jam! it is available on Android and iOS platforms.</p>
+                    <br/>
+
+                    <div className="video-container">
+                        <iframe title="TapTapCars: Traffic Jam!" src="https://www.youtube.com/embed/dPyMorOLmF8" frameBorder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                    </div>
                 </Col>
             </Row>
         </Container>

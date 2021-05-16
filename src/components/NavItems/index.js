@@ -20,17 +20,17 @@ export function NavIcon({ location, link, text, icon_dark, icon_light, icon}) {
     </li>;
 }
 
-export function NavDropdown({location, link, text, drop_content }) {
+export function BootcampNavDropdown({location, link, text, drop_content }) {
     let dropDownStruct = (<ul id={`${link}-${location}`} className="dropdown-content">
         {drop_content.map(dropItem => {
-            return <DropDownItem 
+            return <BootCampDropDownItem 
             key={dropItem.title}
             title={dropItem.title}
             summary={dropItem.summary}
             path_screenshot={dropItem.path_screenshot}
             link_deploy={dropItem.link_deploy}
             link_github={dropItem.link_github}
-            ></DropDownItem>
+            ></BootCampDropDownItem>
         })}
     </ul>);
     return (<li>
@@ -39,7 +39,28 @@ export function NavDropdown({location, link, text, drop_content }) {
     </li>);
 }
 
-function DropDownItem({ title, link_deploy, link_github, summary, path_screenshot}){
+function BootCampDropDownItem({ title, link_deploy, link_github, summary, path_screenshot}){
     const webProject = useContext(WebProjectContext);
-    return <li><a href="#!" onClick={()=> webProject.onDropDownClick(title, link_deploy, link_github, path_screenshot, summary)} className="dropdown-link">{title}</a></li>;
+    return <li><a href="#!" onClick={()=> webProject.onBootCampDropDownClick(title, link_deploy, link_github, path_screenshot, summary)} className="dropdown-link">{title}</a></li>;
+}
+
+export function ProExpNavDropdown({location, link, text, drop_content }) {
+    let dropDownStruct = (<ul id={`${link}-${location}`} className="dropdown-content">
+        {drop_content.map(dropItem => {
+            return <ProExpDropDownItem 
+            key={dropItem.title}
+            title={dropItem.title}
+            page={dropItem.page}
+            ></ProExpDropDownItem>
+        })}
+    </ul>);
+    return (<li>
+        <a className="dropdown-trigger" href="#!" data-target={`${link}-${location}`}><i className="material-icons right">arrow_drop_down</i>{text}</a>
+        {dropDownStruct}
+    </li>);
+}
+
+function ProExpDropDownItem({ title, page }) {
+    const webProject = useContext(WebProjectContext);
+    return <li><a href="#!" onClick={()=> webProject.onProExpDropDownClick(title, page)} className="dropdown-link">{title}</a></li>;
 }

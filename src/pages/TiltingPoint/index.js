@@ -1,6 +1,6 @@
 import { Container, Row } from "../../components/Grid";
 import "./style.css";
-import SpongeBobKrustyCookOff from "../../images/por_exp/tiltingpoint/SpongeBobKrustyCookOff.png";
+import SpongeBobKrustyCookOff from "../../images/por_exp/tiltingpoint/spongebob.png";
 import TerraGenesis from "../../images/por_exp/tiltingpoint/terragenesis.png";
 import Zombieland from "../../images/por_exp/tiltingpoint/zombieland.png";
 

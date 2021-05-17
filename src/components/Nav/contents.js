@@ -8,6 +8,7 @@ import weather_dashboard from "../../images/web_projects/weather_dashboard.png";
 import work_day_scheduler from "../../images/web_projects/work_day_scheduler.png";
 import code_quiz from "../../images/web_projects/code_quiz.png";
 import password_generator from "../../images/web_projects/password_generator.png";
+import TiltingPoint from "../../pages/TiltingPoint";
 
 const Contents = [
     {
@@ -29,7 +30,7 @@ const Contents = [
         drop_content: [
             {
                 title: "Tilting Point Media LLC",
-                page: <></>
+                page: <TiltingPoint></TiltingPoint>
             }
         ]
     },

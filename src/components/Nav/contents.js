@@ -21,7 +21,7 @@ const Contents = [
     },
     {
         type: NAV_TYPE_PAGE,
-        link: "https://drive.google.com/file/d/1wlSGE4hwIKqJ1lGyOFaKZ1k8APNAbTuT/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1GMmSV6qxQJVzaF_5WOTwTSzwphwZ602I/view?usp=sharing",
         text: "Resume",
         target: "_blank",
     },

@@ -1,7 +1,4 @@
 import { Container, Row, Col } from "../../components/Grid";
-// import "./style.css";
-import MatchMakerTool from "../../images/game_dev/matchmaker/matchmaker_tool.gif";
-import MatchMakerLevelSelection from "../../images/game_dev/matchmaker/matchmaker_levelselection.gif";
 
 function MatchMaker() {
 

@@ -1,4 +1,4 @@
-import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_BOOTCAMP_DROPDOWN, NAV_TYPE_PRO_EXPERIENCE } from "../../utils/constants";
+import { NAV_TYPE_PAGE, NAV_TYPE_ICON, NAV_TYPE_BOOTCAMP_DROPDOWN, NAV_TYPE_PAGE_DROPDOWN } from "../../utils/constants";
 import linkedInIcon from "../../images/icons/LinkedIn.png";
 import github_dark from "../../images/icons/GitHub-Dark.png";
 import github_light from "../../images/icons/GitHub-Light.png";
@@ -9,6 +9,8 @@ import work_day_scheduler from "../../images/web_projects/work_day_scheduler.png
 import code_quiz from "../../images/web_projects/code_quiz.png";
 import password_generator from "../../images/web_projects/password_generator.png";
 import TiltingPoint from "../../pages/TiltingPoint";
+import MatchMaker from "../../pages/MatchMaker";
+import TapTapCars from "../../pages/TapTapCars";
 
 const Contents = [
     {
@@ -24,13 +26,28 @@ const Contents = [
         target: "_blank",
     },
     {
-        type: NAV_TYPE_PRO_EXPERIENCE,
+        type: NAV_TYPE_PAGE_DROPDOWN,
         link: "profExpDropdown",
         text: "Prof Exp",
         drop_content: [
             {
                 title: "Tilting Point Media LLC",
                 page: <TiltingPoint></TiltingPoint>
+            }
+        ]
+    },
+    {
+        type: NAV_TYPE_PAGE_DROPDOWN,
+        link: "gameDevDropdown",
+        text: "Game Dev",
+        drop_content: [
+            {
+                title: "TapTapCars: Traffic Jam!",
+                page: <TapTapCars></TapTapCars>
+            },
+            {
+                title: "Match Maker",
+                page: <MatchMaker></MatchMaker>
             }
         ]
     },

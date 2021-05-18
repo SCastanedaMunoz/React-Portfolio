@@ -21,3 +21,7 @@ body {
 .row {
   margin-bottom: 0;
 }
+
+a {
+  color: white;
+}

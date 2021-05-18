@@ -6,10 +6,10 @@ import Zombieland from "../../images/por_exp/tiltingpoint/zombieland.png";
 
 function TiltingPoint() {
 
-    return (<Container id="tiltingpoint-container">
+    return (<Container classes="special-container">
 
         <Row>
-            <header><img src="https://cdn-tiltingpoint-website.tiltingpoint.io/static/logo.svg" alt="Tilting Point Media LLC" /></header>
+            <header><img src="https://cdn-tiltingpoint-website.tiltingpoint.io/static/logo.svg" alt="Tap" /></header>
             <hr />
             <p>I have been working at Tilting Point Media since March 2019; there, I have been in the role of Client Engineer supporting all of the games that include the Tilting Point SDK.
             I have been directly involved in the development and production of the Tilting Point SDK. Taking it from a monolithic legacy unity package, to a easily distributable package based SDK, where developers only need to integrate the features they need.

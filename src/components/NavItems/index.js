@@ -44,14 +44,14 @@ function BootCampDropDownItem({ title, link_deploy, link_github, summary, path_s
     return <li><a href="#!" onClick={()=> webProject.onBootCampDropDownClick(title, link_deploy, link_github, path_screenshot, summary)} className="dropdown-link">{title}</a></li>;
 }
 
-export function ProExpNavDropdown({location, link, text, drop_content }) {
+export function PageNavDropdown({location, link, text, drop_content }) {
     let dropDownStruct = (<ul id={`${link}-${location}`} className="dropdown-content">
         {drop_content.map(dropItem => {
-            return <ProExpDropDownItem 
+            return <PageDownItem 
             key={dropItem.title}
             title={dropItem.title}
             page={dropItem.page}
-            ></ProExpDropDownItem>
+            ></PageDownItem>
         })}
     </ul>);
     return (<li>
@@ -60,7 +60,7 @@ export function ProExpNavDropdown({location, link, text, drop_content }) {
     </li>);
 }
 
-function ProExpDropDownItem({ title, page }) {
+function PageDownItem({ title, page }) {
     const webProject = useContext(WebProjectContext);
     return <li><a href="#!" onClick={()=> webProject.onProExpDropDownClick(title, page)} className="dropdown-link">{title}</a></li>;
 }

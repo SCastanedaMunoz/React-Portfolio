@@ -36,7 +36,6 @@ function App() {
     switch (webState.current) {
       case PAGE_PROEXP:
         return webState.proExpPage;
-
       case PAGE_WEBPROJECT:
         return <WebProject title={webState.title} link_deploy={webState.link_deploy} link_github={webState.link_github} screenshot={webState.screenshot} summary={webState.summary} />;
       default:
